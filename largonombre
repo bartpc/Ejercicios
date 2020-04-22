@@ -1,0 +1,25 @@
+#Comparar si el nombre es largo (7+ caracteres), medio (5-7 caracteres)
+#o corto (<5 caracteres)
+#Imprimir el mensaje:
+#"¡Su nombre es <categoría>, tiene <numero de caracteres>!
+
+nombre=input('cual es su nombre usuario: ')
+caracteres = len(nombre) 
+if caracteres<5:
+  categoria='corto'
+elif caracteres>=5 and caracteres<7:
+  categoria='medio'
+elif caracteres>=7: 
+  categoria='largo'
+
+print('su nombre es ' + categoria + ' y tiene '+str(caracteres)+' caracteres')
+
+
+nombre=input('cual es su nombre usuario: ')
+caracteres = len(nombre) 
+if caracteres<5:
+  print('su nombre es corto y tiene '+str(caracteres)+' caracteres')
+elif caracteres>=5 and caracteres<7:
+  print('su nombre es medio y tiene '+str(caracteres)+' caracteres') 
+elif caracteres>=7: 
+  print('su nombre es largo y tiene '+str(caracteres)+' caracteres')
